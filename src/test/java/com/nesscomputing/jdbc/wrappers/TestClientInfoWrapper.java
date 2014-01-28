@@ -25,13 +25,6 @@ import com.google.inject.Injector;
 import com.google.inject.Stage;
 import com.google.inject.name.Named;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.skife.jdbi.v2.IDBI;
-
 import com.nesscomputing.config.Config;
 import com.nesscomputing.config.ConfigModule;
 import com.nesscomputing.db.postgres.junit.EmbeddedPostgresRules;
@@ -40,8 +33,15 @@ import com.nesscomputing.jdbc.DatabaseModule;
 import com.nesscomputing.lifecycle.junit.LifecycleRule;
 import com.nesscomputing.lifecycle.junit.LifecycleRunner;
 import com.nesscomputing.lifecycle.junit.LifecycleStatement;
-import com.nesscomputing.testing.lessio.AllowDNSResolution;
-import com.nesscomputing.testing.lessio.AllowNetworkAccess;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.kitei.testing.lessio.AllowDNSResolution;
+import org.kitei.testing.lessio.AllowNetworkAccess;
+import org.skife.jdbi.v2.IDBI;
 
 /**
  * This test requires a local postgres database and a "postgres" user that can connect to the database without a password.

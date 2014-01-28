@@ -27,6 +27,7 @@ import com.google.common.collect.ImmutableSet;
 import com.google.inject.AbstractModule;
 import com.google.inject.Scopes;
 import com.google.inject.name.Names;
+
 import com.nesscomputing.jdbc.wrappers.ApplicationNameWrapper;
 import com.nesscomputing.jdbc.wrappers.ClientInfoWrapper;
 import com.nesscomputing.jdbc.wrappers.CloseableWrapper;

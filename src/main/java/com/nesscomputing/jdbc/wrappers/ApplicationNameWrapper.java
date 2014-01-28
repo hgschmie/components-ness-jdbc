@@ -29,6 +29,7 @@ import javax.sql.DataSource;
 import com.google.common.base.Function;
 import com.google.common.collect.Maps;
 import com.google.inject.Singleton;
+
 import com.nesscomputing.jdbc.wrappers.AbstractProxyInvocationHandler.MethodInterceptor;
 import com.nesscomputing.logging.Log;
 

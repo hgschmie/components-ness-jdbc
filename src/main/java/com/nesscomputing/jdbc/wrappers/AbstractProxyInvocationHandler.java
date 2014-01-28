@@ -21,6 +21,7 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 import com.google.common.collect.Maps;
+
 import com.nesscomputing.logging.Log;
 
 /**
@@ -122,7 +123,7 @@ abstract class AbstractProxyInvocationHandler implements InvocationHandler
     /**
      * Intercepts calls to a proxied method to allow wrapping, changing or additional operations when a method is invoked.
      */
-    static interface MethodInterceptor<T>
+    interface MethodInterceptor<T>
     {
         /**
          * Intercept the return value from a method call.
@@ -133,7 +134,7 @@ abstract class AbstractProxyInvocationHandler implements InvocationHandler
     /**
      * Represents a method in the method map. Can be replaced with an arbitrary piece of code to redirect method calls.
      */
-    static interface MethodWrapper
+    interface MethodWrapper
     {
         /**
          * Invoke the code represented by this wrapper.

@@ -21,12 +21,12 @@ import java.util.TimeZone;
 
 import javax.sql.DataSource;
 
+import com.nesscomputing.logging.Log;
+
 import org.skife.jdbi.v2.DBI;
 import org.skife.jdbi.v2.Handle;
 import org.skife.jdbi.v2.tweak.HandleCallback;
 import org.skife.jdbi.v2.util.StringMapper;
-
-import com.nesscomputing.logging.Log;
 
 /**
  * Check that a pool is ready for use.

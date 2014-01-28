@@ -20,10 +20,10 @@ import java.lang.reflect.Proxy;
 import java.sql.Connection;
 import java.util.Set;
 
-
 import com.google.common.base.Function;
 import com.google.inject.Singleton;
 import com.mchange.v2.c3p0.C3P0ProxyConnection;
+
 import com.nesscomputing.jdbc.wrappers.AbstractProxyInvocationHandler.MethodWrapper;
 import com.nesscomputing.logging.Log;
 

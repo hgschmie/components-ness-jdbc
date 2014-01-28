@@ -23,10 +23,6 @@ import java.util.Set;
 
 import javax.sql.DataSource;
 
-import org.apache.commons.configuration.CombinedConfiguration;
-import org.apache.commons.configuration.ConfigurationConverter;
-import org.apache.commons.configuration.tree.OverrideCombiner;
-
 import com.google.common.base.Function;
 import com.google.common.base.Functions;
 import com.google.common.base.Preconditions;
@@ -39,12 +35,17 @@ import com.google.inject.Provider;
 import com.google.inject.ProvisionException;
 import com.google.inject.TypeLiteral;
 import com.mchange.v2.c3p0.DataSources;
+
 import com.nesscomputing.config.Config;
 import com.nesscomputing.config.util.ImmutableConfiguration;
 import com.nesscomputing.lifecycle.LifecycleStage;
 import com.nesscomputing.lifecycle.guice.AbstractLifecycleProvider;
 import com.nesscomputing.lifecycle.guice.LifecycleAction;
 import com.nesscomputing.logging.Log;
+
+import org.apache.commons.configuration.CombinedConfiguration;
+import org.apache.commons.configuration.ConfigurationConverter;
+import org.apache.commons.configuration.tree.OverrideCombiner;
 
 public class C3P0DataSourceProvider extends AbstractLifecycleProvider<DataSource> implements Provider<DataSource>
 {
